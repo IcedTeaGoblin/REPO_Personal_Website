@@ -15,13 +15,15 @@ a {
     background-color: #5a8a81;
 }
 
-/* The main navigation bar that will always be present at the top of the screen*/
+/* The main navigation bar that will always be present on the left-side of the screen*/
 .mainNavbar {
-    width:100%;
-    height:50px;
+    height:100vh;
+    width:400px;    /*Change the padding of the sectionParent whenver this value is changed*/
     padding:50px;
 
+    position:fixed;
     display:flex;
+    flex-direction:column;
     justify-content:space-between;
     align-items:center;
     box-sizing:border-box;
@@ -38,6 +40,7 @@ a {
 /* Navigation links in the center of the navbar. Applies to all buttons*/
 .navLink {
     display:flex;
+    flex-direction:column;
     
     font-size:20px;
     color:white;
@@ -61,10 +64,21 @@ a {
     display:flex;
     flex-direction:column;
     align-items:center;
-    width:100%;
+    width:calc(100% - 400px);   /*Change the size of the mainNavBar whenver this value is changed*/
     min-height:100vh;
 
+    margin-left:400px;
+    padding:100px;
+
     gap: 50px;
+}
+
+/*The portion of the section that will be split into two parts: a body of text and an image*/
+.sectionDivide {
+    display:flex;
+    flex-direction:row;
+
+    justify-content:space-between;
 }
 
 .sectionAboutMe {
