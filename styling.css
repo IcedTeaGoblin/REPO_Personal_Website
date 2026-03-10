@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 a {
   text-decoration: none;  
   color: inherit;         
@@ -6,9 +12,10 @@ a {
 .mainbody {
     width:100%;
     height:100%;
-    background-color: rgb(6, 15, 11);
+    background-color: #5a8a81;
 }
 
+/* The main navigation bar that will always be present at the top of the screen*/
 .mainNavbar {
     width:100%;
     height:50px;
@@ -18,13 +25,17 @@ a {
     justify-content:space-between;
     align-items:center;
     box-sizing:border-box;
+
+    background-color:blue; /*I AM FOR TESTING*/
 }
 
+/* The main title at the left-side of the navbar*/
 .navTitle {
     font-size:40px;
     color:white;
 }
 
+/* Navigation links in the center of the navbar. Applies to all buttons*/
 .navLink {
     display:flex;
     
@@ -34,6 +45,7 @@ a {
     gap:150px;
 }
 
+/* The contact link at the right-side of the navbar*/
 .navButton {
     border: 2px solid;
     border-radius:10px;
@@ -43,4 +55,49 @@ a {
     font-size:20px;
     background-color:white;
     color:rgb(6, 15, 11);
+}
+
+.sectionsParent{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    width:100%;
+    min-height:100vh;
+
+    gap: 50px;
+}
+
+.sectionAboutMe {
+    width:100%;
+    border:2px solid red;
+    
+    min-height: 100px;
+}
+
+.sectionEducation {
+    width:100%;
+    border:2px solid orange;
+    
+    min-height: 100px;
+}
+
+.sectionCareer {
+    width:100%;
+    border:2px solid yellow;
+    
+    min-height: 100px;
+}
+
+.sectionProjects {
+    width:100%;
+    border:2px solid green;
+    
+    min-height: 100px;
+}
+
+.sectionContact {
+    width:100%;
+    border:2px solid blue;
+    
+    min-height: 100px;
 }
