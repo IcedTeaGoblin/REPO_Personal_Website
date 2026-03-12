@@ -45,7 +45,9 @@ a {
     font-size:20px;
     color:white;
 
-    gap:150px;
+    text-align:center;
+
+    gap:30px;
 }
 
 /* The contact link at the right-side of the navbar*/
@@ -78,40 +80,65 @@ a {
     display:flex;
     flex-direction:row;
 
-    justify-content:space-between;
+    justify-content:center;
 }
 
 .sectionAboutMe {
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+
     width:100%;
     border:2px solid red;
     
     min-height: 100px;
+    gap:200px;
 }
 
 .sectionEducation {
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+
     width:100%;
     border:2px solid orange;
     
     min-height: 100px;
+    gap:200px;
 }
 
 .sectionCareer {
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+
     width:100%;
     border:2px solid yellow;
     
     min-height: 100px;
+    gap:200px;
 }
 
-.sectionProjects {
+.sectionWork {
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+
     width:100%;
-    border:2px solid green;
+    border:2px solid yellow;
     
     min-height: 100px;
+    gap:200px;
 }
 
 .sectionContact {
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+
     width:100%;
     border:2px solid blue;
     
     min-height: 100px;
+    gap:200px;
 }
