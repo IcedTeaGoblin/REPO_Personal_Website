@@ -180,9 +180,25 @@ a {
     gap:200px;
 }
 
+.sectionTextArea {
+    display:flex;
+    flex-direction:column;
+    overflow-wrap:break-word;
+    max-width:80%;
+}
+
 .sectionTitle {
     font-family: "DynaPuff";
     color:#343434;
     text-decoration: none;
     font-size: 5rem;
+    overflow-wrap:break-word;
+}
+
+.sectionDescription {
+    font-family: "DynaPuff";
+    color:#343434;
+    text-decoration: none;
+    font-size: 2rem;
+    overflow-wrap:break-word;
 }
