@@ -76,7 +76,7 @@ html {
     transform: rotate(-5deg);
 
 }
-
+    /* The section that will contain the description/blurb for myself on the navigation bar*/
 .navDesc {
     display:flex;
     width:80%;
@@ -131,6 +131,10 @@ html {
     /*----------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------*/
 
+
+
+/* The sections that will display the main information of the webpage*/
+/*----------------------------------------------------------------------------------------------------*/
 .sectionsParent{
     display:flex;
     flex-direction:column;
@@ -144,84 +148,15 @@ html {
     gap: 50px;
 }
 
-/*The portion of the section that will be split into two parts: a body of text and an image*/
+    /*The portion of the section that will be split into two parts: a body of text and an image*/
 .sectionDivide {
     display:flex;
     flex-direction:row;
 
     justify-content:center;
 }
-
-.sectionAboutMe {
-    display:flex;
-    flex-direction:row;
-    justify-content:center;
-
-    padding:3%;
-
-    width:100%;
-    border:2px solid red;
     
-    min-height: 100px;
-    gap:200px;
-}
-
-.sectionEducation {
-    display:flex;
-    flex-direction:row;
-    justify-content:center;
-
-    padding:3%;
-
-    width:100%;
-    border:2px solid orange;
-    
-    min-height: 100px;
-    gap:200px;
-}
-
-.sectionCareer {
-    display:flex;
-    flex-direction:row;
-    justify-content:center;
-
-    padding:3%;
-
-    width:100%;
-    border:2px solid yellow;
-    
-    min-height: 100px;
-    gap:200px;
-}
-
-.sectionWork {
-    display:flex;
-    flex-direction:row;
-    justify-content:center;
-
-    padding:3%;
-
-    width:100%;
-    border:2px solid yellow;
-    
-    min-height: 100px;
-    gap:200px;
-}
-
-.sectionContact {
-    display:flex;
-    flex-direction:row;
-    justify-content:center;
-
-    width:100%;
-    border:2px solid blue;
-
-    padding:3%;
-    
-    min-height: 100px;
-    gap:200px;
-}
-
+    /*The portion of the section that will contain all text: the title and the description*/
 .sectionTextArea {
     display:flex;
     flex-direction:column;
@@ -231,6 +166,7 @@ html {
     gap: 50px;
 }
 
+    /* The title of each section*/
 .sectionTitle {
     --rotateAmount: 0deg;
 
@@ -245,6 +181,7 @@ html {
     
 }
 
+    /* The bulk-text information of each section, referred to here as its "description"*/
 .sectionDescription {
     --rotateAmount: 0deg;
 
@@ -258,3 +195,83 @@ html {
     transform: rotate(var(--rotateAmount));
     
 }
+
+    /* The css elements for each individual section*/
+    /*----------------------------------------------------------------------------------------------------*/
+
+        /*The "About Me" section*/
+.sectionAboutMe {
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+
+    padding:3%;
+
+    width:100%;
+    border:2px solid red;
+    
+    min-height: 100px;
+    gap:200px;
+}
+
+        /*The "Education" section*/
+.sectionEducation {
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+
+    padding:3%;
+
+    width:100%;
+    border:2px solid orange;
+    
+    min-height: 100px;
+    gap:200px;
+}
+
+        /*The "Career" section*/
+.sectionCareer {
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+
+    padding:3%;
+
+    width:100%;
+    border:2px solid yellow;
+    
+    min-height: 100px;
+    gap:200px;
+}
+
+        /*The "Work" section*/
+.sectionWork {
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+
+    padding:3%;
+
+    width:100%;
+    border:2px solid yellow;
+    
+    min-height: 100px;
+    gap:200px;
+}
+
+        /*The "Contact" section*/
+.sectionContact {
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+
+    width:100%;
+    border:2px solid blue;
+
+    padding:3%;
+    
+    min-height: 100px;
+    gap:200px;
+}
+    /*----------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------*/
