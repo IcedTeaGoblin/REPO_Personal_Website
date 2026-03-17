@@ -41,7 +41,7 @@ a {
 /*----------------------------------------------------------------------------------------------------*/
 .mainNavbar {
     height:100vh;
-    width:400px;    /*Change the padding of the sectionParent whenver this value is changed*/
+    width:500px;    /*Change the padding of the sectionParent whenver this value is changed*/
     padding:50px;
 
     position:fixed;
@@ -51,9 +51,9 @@ a {
     align-items:center;
     box-sizing:border-box;
 
-    background-color:white; /*I AM FOR TESTING*/
-    outline:20px solid #343434;
-    outline-offset: -30px;
+    background-image: url("./sticky-notes.png");
+    background-size: 100% 100%;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.25));
 }
 
     /* The main title at the left-side of the navbar*/
@@ -61,13 +61,16 @@ a {
     display:flex;
     flex-direction:column;
     align-items:center;
+    max-width:80%;
 
-    font-size:4.5rem;
+    font-size:3.8rem;
     font-family: "DynaPuff";
     text-align:center;
     color:#343434;
+    border:2px solid red;
 
-    gap:5px;
+    transform: rotate(-5deg);
+
 }
 
     /* Navigation links in the center of the navbar. Applies to all buttons*/
@@ -80,6 +83,7 @@ a {
 
     font-family: "DynaPuff";
     text-align:center;
+    border:2px solid yellow;
 
     gap:30px;
 
@@ -109,6 +113,8 @@ a {
     font-size:1.5rem;
     background-color:white;
     color:rgb(6, 15, 11);
+
+    border:2px solid blue;
 }
     /*----------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------*/
