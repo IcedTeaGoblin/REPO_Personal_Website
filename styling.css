@@ -162,8 +162,6 @@ html {
     flex-direction:column;
     overflow-wrap:break-word;
     max-width:80%;
-
-    gap: 50px;
 }
 
     /* The title of each section*/
@@ -196,6 +194,21 @@ html {
     
 }
 
+/* The bulk-text information of each section, referred to here as its "description"*/
+.sectionSubDescription {
+    --rotateAmount: 0deg;
+
+
+    font-family: "DynaPuff";
+    color:#343434;
+    text-decoration: none;
+    font-size: 1.25rem;
+    overflow-wrap:break-word;
+
+    transform: rotate(var(--rotateAmount));
+    
+}
+
     /* The css elements for each individual section*/
     /*----------------------------------------------------------------------------------------------------*/
 
@@ -217,7 +230,7 @@ html {
         /*The "Education" section*/
 .sectionEducation {
     display:flex;
-    flex-direction:row;
+    flex-direction:column;
     justify-content:center;
 
     padding:3%;
@@ -229,10 +242,17 @@ html {
     gap:200px;
 }
 
+.sectionSubEducation {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    width:100%;
+}
+
         /*The "Career" section*/
 .sectionCareer {
     display:flex;
-    flex-direction:row;
+    flex-direction:column;
     justify-content:center;
 
     padding:3%;
@@ -247,7 +267,7 @@ html {
         /*The "Work" section*/
 .sectionWork {
     display:flex;
-    flex-direction:row;
+    flex-direction:column;
     justify-content:center;
 
     padding:3%;
@@ -257,6 +277,12 @@ html {
     
     min-height: 100px;
     gap:200px;
+}
+
+.sectionSubWork {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
 }
 
         /*The "Contact" section*/
