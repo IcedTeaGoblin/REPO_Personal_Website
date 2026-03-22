@@ -4,7 +4,50 @@
   padding: 0;
 }
 
+.display_flex_row {
+    display:flex;
+    flex-direction:row;
+}
+
+.display_flex_column {
+    display:flex;
+    flex-direction:column;
+}
+
+.section {
+    flex:1 0 auto;
+    min-height:33vh;
+
+    border: 5px solid purple;
+}
+
+
+
+/*The main body for the entire web page*/
 .main_body {
+    min-height:100vh; /*At minimum, it is as tall as the entire webpage*/
     width:100%;
+
     background-color:white;
+}
+
+/*The body for the navigation bar*/
+.navbar_body {
+    width:20%;
+    max-width:20%;
+    height:100vh;
+
+    position:fixed;
+
+    border: 5px solid red; /*FOR DEBUGGING*/
+}
+
+/*The body for the main content*/
+.content_body {
+    width:80%;
+    max-width:80vw;
+
+    margin-left:20%;
+
+    border: 5px solid blue; /*FOR DEBUGGING*/
 }
