@@ -86,3 +86,35 @@
     width:30%;
 }
 /*----------------------------------------*/
+
+/*education elements*/
+/*----------------------------------------*/
+.education_body {
+
+}
+
+.education_title {
+
+}
+
+.education_text {
+    flex:1 0 auto;
+
+    justify-content: space-evenly;
+}
+
+.education_text-block {
+    width:30%;
+}
+
+.education_text-block-title {
+    height:20%
+}
+.education_text-block-img {
+    height:50%
+}
+.education_text-block-text {
+    flex:1 0 auto;
+}
+
+/*----------------------------------------*/
