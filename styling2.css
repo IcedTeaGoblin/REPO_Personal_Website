@@ -146,3 +146,32 @@
     float:right;
 }
 /*----------------------------------------*/
+
+/*work elements*/
+/*----------------------------------------*/
+.work_body {
+
+}
+
+.work_text {
+    width:70%;
+}
+
+.work_text-title {
+
+}
+
+.work_text-block {
+    flex:1 0 auto;
+}
+
+.work_img {
+    width:30%
+}
+
+.work_text-block-img {
+    width:20%;
+    height:20%;
+    float:left;
+}
+/*----------------------------------------*/
