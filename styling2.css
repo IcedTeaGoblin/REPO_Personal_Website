@@ -116,5 +116,33 @@
 .education_text-block-text {
     flex:1 0 auto;
 }
+/*----------------------------------------*/
 
+/*career elements*/
+/*----------------------------------------*/
+.career_body {
+
+}
+
+.career_img {
+    width:30%
+}
+
+.career_text {
+    width:70%;
+}
+
+.career_text-title {
+
+}
+
+.career_text-block {
+    flex:1 0 auto;
+}
+
+.career_text-block-img {
+    width:20%;
+    height:20%;
+    float:right;
+}
 /*----------------------------------------*/
