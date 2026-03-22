@@ -22,6 +22,7 @@ html {
   scroll-behavior: smooth;
 }
 
+/*
 /* The mainbody element of the page, dictating the confines of all child elements contained in the application*/
 .mainbody {
     width:100%;
