@@ -21,6 +21,18 @@
     border: 5px solid purple;
 }
 
+.debug_outline_red {
+    border: 5px solid red;
+}
+
+.debug_outline_orange {
+    border: 5px solid orange;
+}
+
+.debug_outline_yellow {
+    border: 5px solid yellow;
+}
+
 
 
 /*The main body for the entire web page*/
@@ -51,3 +63,26 @@
 
     border: 5px solid blue; /*FOR DEBUGGING*/
 }
+
+/*about-me elements*/
+/*----------------------------------------*/
+.about-me_body {
+    
+}
+
+.about-me_text {
+    width:70%;
+}
+
+.about-me_text-title {
+
+}
+
+.about-me_text-block {
+    flex: 1 0 auto;
+}
+
+.about-me_img {
+    width:30%;
+}
+/*----------------------------------------*/
