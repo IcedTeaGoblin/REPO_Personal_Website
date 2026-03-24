@@ -17,13 +17,14 @@
 <body class="main_body">
     <!--The navigation bar-->
     <div class="navbar_body display_flex_column">
-        <div class="section">
-            Name + image
+        <div class="navbar_section_center section display_flex_column">
+            <img class="navbar_img" src="temp.png">
+            <div class="navbar_title">Logan Nieto</div>
         </div>
-        <div class="section">
+        <div class="navbar_section_center section">
             Navigation
         </div>
-        <div class="section">
+        <div class="navbar_section_center section">
             Image
         </div>
     </div>
@@ -31,8 +32,12 @@
     <!--The content block-->
     <div class="content_body display_flex_column;">
 
+        <div class="top-bar_body section display_flex_row" style="--section-height:20;">
+            test
+        </div>
+
         <!--The about me section of the content block-->
-        <section class="about-me_body section-body section display_flex_row" style="min-height:45vh;">
+        <section class="about-me_body section-body section display_flex_row" style="--section-height:45;">
             <!--The about me section of the content block-->
             <div class="about-me_text display_flex_column debug_outline_red">
                 <!--About me title-->
@@ -46,7 +51,7 @@
         </section>
 
         <!--The education section of the content block-->
-        <section class="education_body section-body section display_flex_column" style="min-height:45vh;">
+        <section class="education_body section-body section display_flex_column" style="--section-height:45;">
             <!--Education title-->
             <div class="education_title section-title debug_outline_red">
                 Education
@@ -76,7 +81,7 @@
         </section>
 
         <!--The career section of the content block-->
-        <section class="career_body section section-body display_flex_row" style="min-height:45vh;">
+        <section class="career_body section section-body display_flex_row" style="--section-height:45;">
             <!--career image-->
             <div class="career_img debug_outline_red">career img</div>
             <div class="career_text display_flex_column debug_outline_red">
@@ -91,7 +96,7 @@
         </section>
 
         <!--The work section of the content block-->
-        <section class="work_body section section-body display_flex_row" style="min-height:45vh;">
+        <section class="work_body section section-body display_flex_row" style="--section-height:45;">
             <div class="work_text display_flex_column debug_outline_red">
                 <!--Career title-->
                 <div class="work_text-title section-title debug_outline_yellow">Work</div>

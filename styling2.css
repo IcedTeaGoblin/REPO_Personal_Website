@@ -24,10 +24,11 @@
 }
 
 .section {
-    flex:1 0 auto;
-    min-height:33vh;
+    --section-height: 33.33;
 
-    border: 5px solid purple;
+    flex:0 0 auto;
+    min-height:calc(var(--section-height) * 1vh);
+
 }
 
 .section-body {
@@ -67,6 +68,8 @@
     background-size:cover;
 }
 
+/*Navigation Bar Elements*/
+/*----------------------------------------*/
 /*The body for the navigation bar*/
 .navbar_body {
     width:20%;
@@ -74,6 +77,10 @@
     height:100vh;
 
     position:fixed;
+    background-image:url("./sticky-notes.png");
+    background-size:cover;
+    background-position:center;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.25));
     /*border: 5px solid red; /*FOR DEBUGGING*/
 }
 
@@ -86,10 +93,26 @@
     overflow:auto;
 }
 
+.navbar_section_center {
+    justify-content:center;
+    align-items:center;
+}
+
+.navbar_title {
+    font-family:"roboto";
+    font-size:4.5em;
+}
+
+.navbar_img {
+    height:50%;
+    width:50%;
+}
+/*----------------------------------------*/
+
 /*top bar*/
 /*----------------------------------------*/
 .top-bar_body {
-    
+
 }
 /*----------------------------------------*/
 
