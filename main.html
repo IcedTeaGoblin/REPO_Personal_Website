@@ -4,8 +4,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,760;1,760&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styling2.css">
 </head>
+
 
 
 <!--The main body of the project: the entire website space-->
@@ -25,11 +30,13 @@
 
     <!--The content block-->
     <div class="content_body display_flex_column;">
-        <section class="about-me_body section display_flex_row">
+
+        <!--The about me section of the content block-->
+        <section class="about-me_body section-body section display_flex_row" style="min-height:45vh;">
             <!--The about me section of the content block-->
             <div class="about-me_text display_flex_column debug_outline_red">
                 <!--About me title-->
-                <div class="about-me_text-title debug_outline_yellow">about me title</div>
+                <div class="about-me_text-title section-title debug_outline_yellow">About Me</div>
 
                 <!--About me text body-->
                 <div class="about-me_text-block debug_outline_yellow">about me body</div>
@@ -39,10 +46,10 @@
         </section>
 
         <!--The education section of the content block-->
-        <section class="education_body section display_flex_column">
+        <section class="education_body section-body section display_flex_column" style="min-height:45vh;">
             <!--Education title-->
-            <div class="education_title debug_outline_red">
-                education title
+            <div class="education_title section-title debug_outline_red">
+                Education
             </div>
             <div class="education_text display_flex_row debug_outline_red">
                 <!--Education text block-->
@@ -69,12 +76,12 @@
         </section>
 
         <!--The career section of the content block-->
-        <section class="career_body section display_flex_row">
+        <section class="career_body section section-body display_flex_row" style="min-height:45vh;">
             <!--career image-->
             <div class="career_img debug_outline_red">career img</div>
             <div class="career_text display_flex_column debug_outline_red">
                 <!--career title-->
-                <div class="career_text-title debug_outline_yellow">career title</div>
+                <div class="career_text-title section-title debug_outline_yellow">Career</div>
                 <!--career text block-->
                 <div class="career_text-block debug_outline_yellow">
                     career body
@@ -84,10 +91,10 @@
         </section>
 
         <!--The work section of the content block-->
-        <section class="work_body section display_flex_row">
+        <section class="work_body section section-body display_flex_row" style="min-height:45vh;">
             <div class="work_text display_flex_column debug_outline_red">
                 <!--Career title-->
-                <div class="work_text-title debug_outline_yellow">work title</div>
+                <div class="work_text-title section-title debug_outline_yellow">Work</div>
                 <!--Career text block-->
                 <div class="work_text-block debug_outline_yellow">
                     work body
@@ -96,6 +103,25 @@
             </div>
             <!--Career image-->
             <div class="work_img debug_outline_red">work img</div>
+        </section>
+
+        <section class="contact_body display_flex_row" style="border: 5px solid purple">
+            <div class="contact_text display_flex_row debug_outline_red">
+                <div class="contact_text-img debug_outline_orange"></div>
+                <div>contact</div>
+            </div>
+            <div class="contact_text display_flex_row debug_outline_red">
+                <div class="contact_text-img debug_outline_orange"></div>
+                <div>contact</div>
+            </div>
+            <div class="contact_text display_flex_row debug_outline_red">
+                <div class="contact_text-img debug_outline_orange"></div>
+                <div>contact</div>
+            </div>
+            <div class="contact_text display_flex_row debug_outline_red">
+                <div class="contact_text-img debug_outline_orange"></div>
+                <div>contact</div>
+            </div>
         </section>
     </div>
 </body>

@@ -4,6 +4,15 @@
   padding: 0;
 }
 
+.roboto {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 760;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
 .display_flex_row {
     display:flex;
     flex-direction:row;
@@ -19,6 +28,18 @@
     min-height:33vh;
 
     border: 5px solid purple;
+}
+
+.section-body {
+
+    margin:2%;
+    border-radius:5rem;
+    padding:2rem;
+}
+
+.section-title {
+    font-size:3.5em;
+    font-family:"roboto";
 }
 
 .debug_outline_red {
@@ -40,7 +61,10 @@
     min-height:100vh; /*At minimum, it is as tall as the entire webpage*/
     width:100%;
 
-    background-color:white;
+    background-color:#dbdbdb;
+    background-image: linear-gradient(rgba(255,255,255,0.55), rgba(255,255,255,0.55)),
+    url("paper4.png");
+    background-size:cover;
 }
 
 /*The body for the navigation bar*/
@@ -50,8 +74,7 @@
     height:100vh;
 
     position:fixed;
-
-    border: 5px solid red; /*FOR DEBUGGING*/
+    /*border: 5px solid red; /*FOR DEBUGGING*/
 }
 
 /*The body for the main content*/
@@ -60,14 +83,20 @@
     max-width:80vw;
 
     margin-left:20%;
-
-    border: 5px solid blue; /*FOR DEBUGGING*/
+    overflow:auto;
 }
+
+/*top bar*/
+/*----------------------------------------*/
+.top-bar_body {
+    
+}
+/*----------------------------------------*/
 
 /*about-me elements*/
 /*----------------------------------------*/
 .about-me_body {
-    
+
 }
 
 .about-me_text {
@@ -173,5 +202,25 @@
     width:20%;
     height:20%;
     float:left;
+}
+/*----------------------------------------*/
+
+/*contact elements*/
+/*----------------------------------------*/
+.contact_body {
+    min-height: 10vh;
+}
+
+.contact_text {
+    flex:1 0 auto;
+
+    justify-content:center;
+    align-items:center;
+}
+
+.contact_text-img {
+    height:80%;
+    width:20%
+    
 }
 /*----------------------------------------*/
