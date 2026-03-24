@@ -160,10 +160,14 @@
 }
 
 .education_text-block-title {
-    height:20%
+    height:20%;
+    align-content:center;
+    text-align:center;
 }
 .education_text-block-img {
-    height:50%
+    height:50%;
+    align-content:center;
+    align-items:center;
 }
 .education_text-block-text {
     flex:1 0 auto;
@@ -196,6 +200,10 @@
     width:20%;
     height:20%;
     float:right;
+}
+
+.career-text_point {
+    
 }
 /*----------------------------------------*/
 
