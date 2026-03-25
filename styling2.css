@@ -222,7 +222,9 @@
 }
 
 .career_img {
-    width:30%
+    width:30%;
+    justify-content:center;
+    overflow:hidden;
 }
 
 .career_text {
@@ -235,12 +237,17 @@
 
 .career_text-block {
     flex:1 0 auto;
+    gap:5%;
 }
 
 .career_text-block-img {
     width:20%;
     height:20%;
     float:right;
+}
+
+.career_text-point-title {
+    font-size:2em;
 }
 
 .career-text_point {
