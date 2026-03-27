@@ -48,18 +48,16 @@
     border-radius:5rem;
     padding:min(3rem, 8%);
 
-    border:5px solid orange;
+    background-color:white;
     /*filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.25));*/
 }
 
-.section-body2 {
+.section_interior { 
+    background-color:#d6e3f8;
+}
 
-    margin:2%;
-    border-radius:5rem;
-    padding:min(3rem, 8%);
-
-    border:5px solid red;
-    /*filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.25));*/
+.section_interior2 { 
+    background-color:#e4bb97;
 }
 
 .section-title {
@@ -105,7 +103,7 @@
     height:100vh;
 
     position:fixed;
-    background-color:#090C08;
+    background-color:#584b53;
     /*border: 5px solid red; /*FOR DEBUGGING*/
 }
 
