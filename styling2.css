@@ -1,3 +1,25 @@
+:root {
+    --main-background_color:#f1f2f2;
+
+    --top-bar_color:white;
+
+    --navbar-background_color:#1D3557;
+    --navbar-title_color:#F1FAEE;
+    --navbar-body_color:#F1FAEE;
+
+    --section-background_color:white;
+    --section_color1:#B61624;
+    --section_color2:#A8DADC;
+    --section-title_color:#F1FAEE;
+    --section-title_color2:#1D3557;
+    --section-body_color:#F1FAEE;
+    --section-body_color2:#1D3557;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -48,42 +70,35 @@
     border-radius:5rem;
     padding:min(3rem, 8%);
 
-    background-color:white;
+    background-color:var(--section-background_color);
     /*filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.25));*/
 }
 
 .section_interior { 
-    background-color:#d6e3f8;
+    background-color:var(--section_color1);
 }
 
 .section_interior2 { 
-    background-color:#e4bb97;
+    background-color:var(--section_color2);
 }
 
 .section-title {
-    font-size:4em;
-    color:#4da59b;
+    font-size:5em;
+    color:var(--section-title_color);
 }
 
 .section-title2 {
-    font-size:4em;
-    color:#f1f2f2;
+    font-size:5em;
+    color:var(--section-title_color2);
 }
 
-
-.debug_outline_red {
-    border: 5px solid red;
+.section-body-text {
+    color:var(--section-body_color);
 }
 
-.debug_outline_orange {
-    border: 5px solid orange;
+.section-body-text2 {
+    color:var(--section-body_color2);
 }
-
-.debug_outline_yellow {
-    border: 5px solid yellow;
-}
-    
-
 
 
 /*The main body for the entire web page*/
@@ -91,7 +106,7 @@
     min-height:100vh; /*At minimum, it is as tall as the entire webpage*/
     width:100%;
 
-    background-color:#f1f2f2;
+    background-color:var(--main-background_color);
 }
 
 /*Navigation Bar Elements*/
@@ -103,9 +118,51 @@
     height:100vh;
 
     position:fixed;
-    background-color:#584b53;
+    background-color:var(--navbar-background_color);
     /*border: 5px solid red; /*FOR DEBUGGING*/
 }
+
+.navbar_section_center {
+    justify-content:center;
+    align-items:center;
+    padding-left:10%;
+    padding-right:10%;
+
+    min-height:33.33%;
+    max-height:40%;
+}
+
+.navbar_title {
+    font-size:5em;
+    color:var(--navbar-title_color);
+    text-align:center;
+}
+
+.navbar-text-body {
+    text-align:center;
+    font-size:1.2em;
+    color:var(--navbar-body_color)
+}
+
+.navbar-text-body-button {
+    text-align:center;
+    font-size:2em;
+    color:var(--navbar-body_color);
+
+    transition: transform 250ms ease;
+    transform: scale(1.0);
+}
+
+.navbar-text-body-button:hover {
+     transform: scale(1.2);
+}
+
+.navbar_img {
+    height:50%;
+    aspect-ratio:1/1;
+    border-radius:50%;
+}
+/*----------------------------------------*/
 
 /*The body for the main content*/
 .content_body {
@@ -116,29 +173,10 @@
     overflow:auto;
 }
 
-.navbar_section_center {
-    justify-content:center;
-    align-items:center;
-    padding-left:10%;
-    padding-right:10%;
-}
-
-.navbar_title {
-    font-size:5em;
-    color:#f1f2f2;
-}
-
-.navbar_img {
-    height:50%;
-    width:50%;
-    border-radius:50%;
-}
-/*----------------------------------------*/
-
 /*top bar*/
 /*----------------------------------------*/
 .top-bar_body {
-    background-color:white;
+    background-color:var(--top-bar_color);
 }
 /*----------------------------------------*/
 
@@ -150,7 +188,8 @@
 
 .about-me_text {
     width:70%;
-
+    gap:5%;
+    padding:2%;
 }
 
 .about-me_text-title {
@@ -187,6 +226,7 @@
     align-items:center;
     overflow:hidden;
     border-radius:5rem;
+    background-color:white;
 }
 
 .education_text-block-title {
@@ -227,6 +267,7 @@
 
 .career_text {
     width:70%;
+    padding:2%;
 }
 
 .career_text-title {
@@ -261,6 +302,7 @@
 
 .work_text {
     width:70%;
+    padding:2%;
 }
 
 .work_text-title {
