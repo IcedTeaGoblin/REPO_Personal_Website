@@ -1,23 +1,33 @@
+/*Color variables for the entirety of the webpage. To change the color of a certain portion of the webpage, simply change the variable HEX value*/
 :root {
-    --main-background_color:#f1f2f2;
+    --main-background_color:#f1f2f2;        /*Main body background*/
 
-    --top-bar_color:white;
+    --top-bar_color:white;                  /*The bar located at the top of the page*/
 
-    --navbar-background_color:#1D3557;
-    --navbar-title_color:#F1FAEE;
-    --navbar-body_color:#F1FAEE;
+    --navbar-background_color:#1D3557;      /*The navigation bar background*/
+    --navbar-title_color:#F1FAEE;           /*The navigation bar title*/
+    --navbar-body_color:#F1FAEE;            /*The navibation bar body text*/
 
-    --section-background_color:white;
-    --section_color1:#B61624;
-    --section_color2:#A8DADC;
-    --section-title_color:#F1FAEE;
-    --section-title_color2:#1D3557;
-    --section-body_color:#F1FAEE;
-    --section-body_color2:#1D3557;
+    --section-background_color:white;       /*The background color of each section*/
+
+    --section_color1:#B61624;               /*The foreground color of the 1st and 3rd sections*/
+    --section-title_color:#F1FAEE;          /*The title color of the 1st and 3rd sections*/
+    --section-body_color:#F1FAEE;           /*The main body text color of the 1st and 3rd sections*/
+
+    --section_color2:#A8DADC;               /*The foreground color of the 2nd and 4th sections*/
+    --section-title_color2:#1D3557;         /*The title color of the 2nd and 4th sections*/
+    --section-body_color2:#1D3557;          /*The main body text color of the 2nd and 4th sections*/
+
+    --contact-text-color:#1D3557;           /*The text links for the contact section*/
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth;                    /*Makes the navigation between sections a smooth scroll*/     
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 * {
@@ -56,6 +66,8 @@ html {
     font-size:1.2em;
 }
 
+/*The content sections of the main portion of the webpage*/
+/*----------------------------------------*/
 .section {
     --section-height: 33.33;
 
@@ -85,29 +97,36 @@ html {
 .section-title {
     font-size:5em;
     color:var(--section-title_color);
+    font-family:"roboto";
 }
 
 .section-title2 {
     font-size:5em;
     color:var(--section-title_color2);
+    font-family:"roboto";
 }
 
 .section-body-text {
     color:var(--section-body_color);
+    font-family:"roboto";
 }
 
 .section-body-text2 {
     color:var(--section-body_color2);
+    font-family:"roboto";
 }
+/*----------------------------------------*/
 
 
 /*The main body for the entire web page*/
+/*----------------------------------------*/
 .main_body {
     min-height:100vh; /*At minimum, it is as tall as the entire webpage*/
     width:100%;
 
     background-color:var(--main-background_color);
 }
+/*----------------------------------------*/
 
 /*Navigation Bar Elements*/
 /*----------------------------------------*/
@@ -119,7 +138,6 @@ html {
 
     position:fixed;
     background-color:var(--navbar-background_color);
-    /*border: 5px solid red; /*FOR DEBUGGING*/
 }
 
 .navbar_section_center {
@@ -136,12 +154,15 @@ html {
     font-size:5em;
     color:var(--navbar-title_color);
     text-align:center;
+    font-family:"roboto";
 }
 
 .navbar-text-body {
     text-align:center;
     font-size:1.2em;
-    color:var(--navbar-body_color)
+    color:var(--navbar-body_color);
+    font-family:"roboto";
+    
 }
 
 .navbar-text-body-button {
@@ -151,6 +172,7 @@ html {
 
     transition: transform 250ms ease;
     transform: scale(1.0);
+    font-family:"roboto";
 }
 
 .navbar-text-body-button:hover {
@@ -212,7 +234,7 @@ html {
 }
 
 .education_title {
-
+    padding-left:1%;
 }
 
 .education_text {
@@ -339,18 +361,32 @@ html {
 /*----------------------------------------*/
 .contact_body {
     min-height: 10vh;
+    background-color: var(--top-bar_color);
 }
 
-.contact_text {
+.contact-text {
     flex:1 0 auto;
 
     justify-content:center;
     align-items:center;
 }
 
+.contact-text_link {
+    color:var(--contact-text-color);
+    font-family:"roboto";
+    font-size:1.5em;
+
+    transition: transform 250ms ease;
+    transform: scale(1.0);
+}
+
+.contact-text_link:hover {
+     transform: scale(1.2);
+}
+
+
 .contact_text-img {
     height:80%;
     width:20%
-    
 }
 /*----------------------------------------*/
