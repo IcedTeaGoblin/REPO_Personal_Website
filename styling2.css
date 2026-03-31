@@ -26,7 +26,7 @@
     /*Size variables*/
     --section_w-min:300px;
     --section_w-pref:50vw;
-    --section_w-max:70vw;
+    --section_w-max:1250px;
     /*--------------------------------------------------------------------------------------------------*/
 }
 
@@ -83,7 +83,10 @@ a {
     flex:0 0 auto;
     min-height:calc(var(--section-height) * 1vh);
 
-    width:clamp(var(--section_w-min), var(--section_w-pref), var(--section_w-max));
+    /*width:clamp(var(--section_w-min), var(--section_w-pref), var(--section_w-max));*/
+    width:1000px;
+    max-width:75vw;
+    flex-shrink:0;
 
 }
 
@@ -132,10 +135,21 @@ a {
 /*The main body for the entire web page*/
 /*----------------------------------------*/
 .main_body {
+    display:flex;
+    flex-direction:row;
+
     min-height:100vh; /*At minimum, it is as tall as the entire webpage*/
     width:100%;
 
     background-color:var(--main-background_color);
+}
+
+@media (max-width:1024px)
+{
+    .main_body {
+        display:flex;
+        flex-direction:column;
+    }
 }
 /*----------------------------------------*/
 
@@ -143,57 +157,127 @@ a {
 /*----------------------------------------*/
 /*The body for the navigation bar*/
 .navbar_body {
-    width:20%;
-    max-width:20%;
-    height:100vh;
-
+    display:flex;
     position:fixed;
     background-color:var(--navbar-background_color);
 }
 
 .navbar_section_center {
+    display:flex;
     justify-content:center;
     align-items:center;
-    padding-left:10%;
-    padding-right:10%;
-
-    min-height:33.33%;
-    max-height:40%;
 }
 
 .navbar_title {
-    font-size:5em;
+    display:flex;
     color:var(--navbar-title_color);
-    text-align:center;
     font-family:"roboto";
 }
 
 .navbar-text-body {
-    text-align:center;
-    font-size:1.2em;
     color:var(--navbar-body_color);
     font-family:"roboto";
-    
 }
 
-.navbar-text-body-button {
-    text-align:center;
-    font-size:2em;
-    color:var(--navbar-body_color);
+/*Mobile display*/
+@media (max-width:1024px)
+{
+    .navbar_body {
+        flex-direction:row;
 
-    transition: transform 250ms ease;
-    transform: scale(1.0);
-    font-family:"roboto";
+        height:10vh;
+        max-height:10%;
+        width:100vw;
+        min-width:100vw;
+
+        position:fixed;
+    }
+
+    .navbar_section_center {
+        flex-direction:row;
+
+        padding-top:10%;
+        padding-bottom:10%;
+
+        min-width:33.33%;
+        max-width:40%;
+        height:100%;
+    }
+
+    .navbar_title {
+        font-size:4em;
+        text-align:center;
+
+        height:100%;
+    }
+
+    .navbar-text-body {
+        text-align:center;
+        font-size:1.0em;
+    }
+
+    .navbar_img {
+        height:40%;
+        aspect-ratio:1/1;
+        border-radius:50%;
+    }
 }
 
-.navbar-text-body-button:hover {
-     transform: scale(1.2);
-}
+/*Desktop display*/
+@media (min-width:1025px)
+{
+    .navbar_body {
+        flex-direction:column;
 
-.navbar_img {
-    height:50%;
-    aspect-ratio:1/1;
-    border-radius:50%;
+        width:clamp(350px, 350px, 10vw);
+        max-width:20vw;
+        height:100vh;
+
+        position:fixed;
+    }
+
+    .navbar_section_center {
+        flex-direction:column;
+
+        justify-content:center;
+        align-items:center;
+        padding-left:10%;
+        padding-right:10%;
+
+        min-height:33.33%;
+        max-height:40%;
+        width:100%;
+    }
+
+    .navbar_title {
+        font-size:4em;
+        text-align:center;
+    }
+
+    .navbar-text-body {
+        text-align:center;
+        font-size:1.0em;
+    }
+
+    .navbar-text-body-button {
+        text-align:center;
+        font-size:2em;
+        color:var(--navbar-body_color);
+
+        transition: transform 250ms ease;
+        transform: scale(1.0);
+        font-family:"roboto";
+    }
+
+    .navbar-text-body-button:hover {
+        transform: scale(1.2);
+    }
+
+    .navbar_img {
+        height:40%;
+        aspect-ratio:1/1;
+        border-radius:50%;
+    }
 }
 /*----------------------------------------*/
 
@@ -219,7 +303,7 @@ a {
 }
 
 .about-me_text {
-    width:70%;
+    width:60%;
     gap:5%;
     padding:2%;
 }
@@ -234,7 +318,9 @@ a {
 }
 
 .about-me_img {
-    width:30%;
+    width:40%;
+    aspect-ratio:1/1;
+    overflow:hidden;
 }
 /*----------------------------------------*/
 
