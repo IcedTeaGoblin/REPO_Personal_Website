@@ -72,7 +72,7 @@ a {
 }
 
 .text-body {
-    font-size:1.2em;
+    font-size:1.1em;
 }
 
 /*The content sections of the main portion of the webpage*/
@@ -93,7 +93,7 @@ a {
 .section-body {
 
     margin:2%;
-    border-radius:5rem;
+    border-radius:3rem;
     padding:min(3rem, 8%);
 
     background-color:var(--section-background_color);
@@ -379,7 +379,7 @@ a {
 
 .about-me_text-block {
     flex: 1 0 auto;
-    font-size:1em;
+    font-size:0.8em;
 }
 
 .about-me_img {
@@ -409,18 +409,19 @@ a {
     width:30%;
     align-items:center;
     overflow:hidden;
-    border-radius:5rem;
+    border-radius:3rem;
     background-color:white;
+
+    justify-content:space-between;
 }
 
 .education_text-block-title {
-    height:10%;
     align-content:center;
     text-align:center;
-    font-size:3em;
+    font-size:2.2em;
 }
 .education_text-block-subtitle {
-    font-size:1.2em;
+    font-size:1.0em;
 }
 
 .education_text-block-img {
@@ -431,7 +432,7 @@ a {
 
 .education_text-block-text {
     flex:1 0 auto;
-    font-size:1.5em;
+    font-size:1.0em;
     text-align:justify;
     padding:5%;
 }
