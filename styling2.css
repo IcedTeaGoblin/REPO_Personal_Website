@@ -122,12 +122,12 @@ a {
 
 .section-body-text {
     color:var(--section-body_color);
-    font-family:"roboto";
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 .section-body-text2 {
     color:var(--section-body_color2);
-    font-family:"roboto";
+    font-family:Arial, Helvetica, sans-serif;
 }
 /*----------------------------------------*/
 
@@ -146,6 +146,11 @@ a {
 /*----------------------------------------*/
 .top-bar_body {
     display:flex;
+    align-items:center;
+    justify-content:center;
+
+    color:#1D3557;
+    font-family:Arial, Helvetica, sans-serif;
 
     width:100%;
     min-height:100px;
@@ -538,7 +543,7 @@ a {
 
 .contact-text_link {
     color:var(--contact-text-color);
-    font-family:"roboto";
+    font-family:Arial, Helvetica, sans-serif;
     font-size:1.5em;
 
     transition: transform 250ms ease;
