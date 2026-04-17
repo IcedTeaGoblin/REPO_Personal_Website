@@ -5,9 +5,9 @@
 
     --top-bar_color:white;                  /*The bar located at the top of the page*/
 
-    --navbar-background_color:#1D3557;      /*The navigation bar background*/
-    --navbar-title_color:#F1FAEE;           /*The navigation bar title*/
-    --navbar-body_color:#F1FAEE;            /*The navibation bar body text*/
+    --navbar-background_color:#92d1a3;      /*The navigation bar background*/
+    --navbar-title_color:white;           /*The navigation bar title*/
+    --navbar-body_color:white;            /*The navibation bar body text*/
 
     --section-background_color:white;       /*The background color of each section*/
 
@@ -136,7 +136,7 @@ a {
     display: flex;
     flex-direction:column;
 
-    flex:1 0 auto;
+    flex:1 1 auto;
     align-items:center;
 
     margin-left:350px;
@@ -145,7 +145,6 @@ a {
 /*top bar*/
 /*----------------------------------------*/
 .top-bar_body {
-    display:flex;
     align-items:center;
     justify-content:center;
 
@@ -155,6 +154,19 @@ a {
     width:100%;
     min-height:100px;
     background-color:var(--top-bar_color);
+}
+
+@media (max-width:1600px)
+{
+    .top-bar_body {
+        display:none;
+    }
+}
+@media (min-width:1601px)
+{
+    .top-bar_body {
+        display:flex;
+    }
 }
 /*----------------------------------------*/
 
@@ -170,7 +182,7 @@ a {
     background-color:var(--main-background_color);
 }
 
-@media (max-width:1400px)
+@media (max-width:1600px)
 {
     .main_body {
         display:flex;
@@ -224,8 +236,16 @@ a {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.navbar_decor {
+    position:fixed;
+}
+
+.navbar_decor_hor {
+    position:fixed;
+}
+
 /*Mobile display*/
-@media (max-width:1400px)
+@media (max-width:1600px)
 {
     .navbar_body {
         flex-direction:row;
@@ -238,6 +258,14 @@ a {
         padding:5%;
 
         position:fixed;
+    }
+
+    .navbar_decor {
+        display:none;
+    }
+
+    .navbar_decor_hor {
+        display:block;
     }
 
     .navbar_section_title {
@@ -284,7 +312,7 @@ a {
 }
 
 /*Desktop display*/
-@media (min-width:1401px)
+@media (min-width:1601px)
 {
     .navbar_body {
         flex:0 0 auto;
@@ -294,6 +322,14 @@ a {
         height:100vh;
 
         position:fixed;
+    }
+
+    .navbar_decor {
+        display:block;
+    }
+
+    .navbar_decor_hor {
+        display:none;
     }
 
     .navbar_section_title {
