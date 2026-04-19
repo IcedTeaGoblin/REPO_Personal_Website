@@ -16,10 +16,10 @@
     --section-body_color:#F1FAEE;           /*The main body text color of the 1st and 3rd sections*/
 
     --section_color2:#92d1a3;               /*The foreground color of the 2nd and 4th sections*/
-    --section-title_color2:#1D3557;         /*The title color of the 2nd and 4th sections*/
+    --section-title_color2:white;         /*The title color of the 2nd and 4th sections*/
     --section-body_color2:#1D3557;          /*The main body text color of the 2nd and 4th sections*/
 
-    --contact-text-color:#1D3557;           /*The text links for the contact section*/
+    --contact-text-color:#92d1a3;           /*The text links for the contact section*/
     /*--------------------------------------------------------------------------------------------------*/
 
     /*--------------------------------------------------------------------------------------------------*/
@@ -86,6 +86,7 @@ a {
     /*width:clamp(var(--section_w-min), var(--section_w-pref), var(--section_w-max));*/
     width:1000px;
     max-width:75vw;
+    min-width:900px;
     flex-shrink:0;
 
 }
@@ -192,8 +193,7 @@ a {
         flex:1 0 auto;
         align-items:center;
 
-        width:calc(100vw-350px);
-        margin-top:10vh;
+        margin-top:20vh;
         margin-left:0%;
 }
 }
@@ -248,10 +248,11 @@ a {
 @media (max-width:1600px)
 {
     .navbar_body {
+        flex:0 0 auto;
         flex-direction:row;
 
         height:10vh;
-        max-height:10%;
+        min-height:100px;
         width:100vw;
         min-width:680px;
 
@@ -266,6 +267,11 @@ a {
 
     .navbar_decor_hor {
         display:block;
+
+        position:fixed;
+        margin-top:calc(10vh - 10px);
+        width:100vw;
+        min-width:680px;
     }
 
     .navbar_section_title {
@@ -326,6 +332,9 @@ a {
 
     .navbar_decor {
         display:block;
+        position:fixed;
+        margin-left:350px;
+        height:100vh;
     }
 
     .navbar_decor_hor {
