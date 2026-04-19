@@ -11,11 +11,11 @@
 
     --section-background_color:white;       /*The background color of each section*/
 
-    --section_color1:#B61624;               /*The foreground color of the 1st and 3rd sections*/
+    --section_color1:#92d1a3;               /*The foreground color of the 1st and 3rd sections*/
     --section-title_color:#F1FAEE;          /*The title color of the 1st and 3rd sections*/
     --section-body_color:#F1FAEE;           /*The main body text color of the 1st and 3rd sections*/
 
-    --section_color2:#A8DADC;               /*The foreground color of the 2nd and 4th sections*/
+    --section_color2:#92d1a3;               /*The foreground color of the 2nd and 4th sections*/
     --section-title_color2:#1D3557;         /*The title color of the 2nd and 4th sections*/
     --section-body_color2:#1D3557;          /*The main body text color of the 2nd and 4th sections*/
 
@@ -421,7 +421,7 @@ a {
 
 .about-me_text-block {
     flex: 1 0 auto;
-    font-size:0.8em;
+    font-size:0.9em;
 }
 
 .about-me_img {
