@@ -31,8 +31,8 @@
             <a class="navbar-text-body-button" href="#contacts">Contacts</a>
         </div>
     </div>
-    <img class="navbar_decor" src="./media/sidebar.png">
-    <img class="navbar_decor_hor" src="./media/sidebar_hor.png">
+    <img class="navbar_decor" src="./media/sidebar_1.png">
+    <img class="navbar_decor_hor" src="./media/sidebar_hor_1.png">
 
     <!--The content block-->
     <div class="content_body">
@@ -41,7 +41,7 @@
 
         <!--The about me section of the content block-->
         <section id="aboutme" class="about-me_body section-body section display_flex_row" style="--section-height:50;">
-            <div class="display_flex_row section_interior" style="border-radius:3rem; overflow:hidden;width:100%;">
+            <div class="display_flex_row section_interior" style="border-radius:3rem; overflow-x:hidden;overflow-y:visible;width:100%;">
                 <!--The about me section of the content block-->
                 <div class="about-me_text display_flex_column">
                     <!--About me title-->
@@ -51,8 +51,7 @@
                     <div class="about-me_text-block section-body-text">Hi there! My name is Logan, named after the small angry Canadian guy with the metal claws.</div>
                     <div class="about-me_text-block section-body-text">I am a Computer Science graduate with a strong interest in how people interact with complex computer systems. I enjoy develop with both front end systems, where I can help users navigate potentially confusing systems with easy and visual flair, and backend systems to ensure that all data is processed smoothly, efficiently and with the necessary level of privacy.</div>
                     <div class="about-me_text-block section-body-text">My interest began while playing video games as a child, developing an interest in the technical aspects of how they run and the intense amount of creativity that goes into creating an entire world on a cartridge, disc or executable file. I've experimented with game development utilizing the Unity Engine and creating applicable game assets, both 2D and 3D using a variety of different creative software.</div>
-                    <div class="about-me_text-block section-body-text">My goal now is to apply my skills in an industry and at a company where they can be put to the ultimate test. I wish to share my interests, passions and skills with likeminded individuals and pave my way to my future. It will all be worth it if I can contribute to a common goal, and most of all if I can make people happy in the process.</div>
-                    
+                    <div class="about-me_text-block section-body-text" style="margin-bottom:30%;">My goal now is to apply my skills in an industry and at a company where they can be put to the ultimate test. I wish to share my interests, passions and skills with likeminded individuals and pave my way to my future. It will all be worth it if I can contribute to a common goal, and most of all if I can make people happy in the process.</div>
                     
                 </div>
                 <!--About me image-->
@@ -64,32 +63,36 @@
         <section id="education" class="education_body section-body section display_flex_column" style="--section-height:50;">
             <!--Education title-->
             <div class="display_flex_column section_interior2" style="border-radius:3rem;overflow:hidden;flex:1 0 auto;padding:2%;">
-                <div class="education_title section-title2">Education</div>
+                <div class="education_title section-title">Education</div>
                 <div class="education_text display_flex_row">
                     <!--Education text block-->
-                    <div class="education_text-block display_flex_column section-body-text2">
+                    <div class="education_text-block display_flex_column section-body-text">
                         <img src="./media/highschool.webp" class="education_text-block-img">
-                        <div class="education_text-block-title section-body-text2">High School</div>
-                        <div class="education_text-block-subtitle section-body-text2">2014-2018</div>
+                        <div style="text-align:center;">
+                            <div class="education_text-block-title section-body-text2">High School</div>
+                            <div class="education_text-block-subtitle section-body-text2">2014-2018</div>
+                        </div>
                         <div class="education_text-block-text section-body-text2">Graduated with a 1320 SAT score, competing as a part of the school's Cross Country and Track team, participating in the Videogame Development Club, and acting as a journalist for the school newspaper <i>The News Torch</i></i></div>
                     </div>
 
                     <!--Education text block-->
-                    <div class="education_text-block display_flex_column section-body-text2">
+                    <div class="education_text-block display_flex_column section-body-text">
                         <img src="./media/college.jpg" class="education_text-block-img">
-                        <div class="education_text-block-title">Bachelor's</div>
-                        <div class="education_text-block-subtitle">2018-2022</div>
-                        <div class="education_text-block-text">Achieved a 3.0 GPA while taking part in the Video Game Development Association, working alongside my fellow students to develop games using the <i>Unity</i> engine</div>
+                        <div style="text-align:center;">
+                            <div class="education_text-block-title section-body-text2">Bachelor's</div>
+                            <div class="education_text-block-subtitle section-body-text2">2018-2022</div>
+                        </div>
+                        <div class="education_text-block-text section-body-text2">Achieved a 3.0 GPA while taking part in the Video Game Development Association, working alongside my fellow students to develop games using the <i>Unity</i> engine</div>
                     </div>
 
                     <!--Education text block-->
-                    <div class="education_text-block display_flex_column section-body-text2">
+                    <div class="education_text-block display_flex_column section-body-text">
                         <img src="./media/masters.jpg" class="education_text-block-img">
                         <div style="text-align:center;">
-                            <div class="education_text-block-title">Master's</div>
-                            <div class="education_text-block-subtitle">2023-2025</div>
+                            <div class="education_text-block-title section-body-text2">Master's</div>
+                            <div class="education_text-block-subtitle section-body-text2">2023-2025</div>
                         </div>
-                        <div class="education_text-block-text">Achieved a 3.33 GPA while plotting, developing and conducting trials for my thesis project: <i>Determing the Effectiveness of Ontological Visualizations on Learning and Assessment Utilizing Eye Tracking</i></div>
+                        <div class="education_text-block-text section-body-text2">Achieved a 3.33 GPA while plotting, developing and conducting trials for my thesis project: <i>Determing the Effectiveness of Ontological Visualizations on Learning and Assessment Utilizing Eye Tracking</i></div>
                     </div>
                 </div>
             </div>
@@ -141,13 +144,13 @@
             <div class="display_flex_row  section_interior2" style="width:100%;border-radius:3rem;overflow:hidden;">
                 <div class="work_text display_flex_column">
                     <!--Career title-->
-                    <div class="work_text-title section-title2">Work</div>
+                    <div class="work_text-title section-title">Work</div>
                     <!--Career text block-->
                     <div class="work_text-block display_flex_column">
                         <!--Work text block-->
                         <div>
-                            <div class="work_text-point-title section-body-text2">Determining the Effectiveness of Ontological Visualizations on Learning and Assessment Utilizing Eye-Tracking</div>
-                            <ul class="section-body-text2" style="list-style-type: disc;">
+                            <div class="work_text-point-title section-body-text">Determining the Effectiveness of Ontological Visualizations on Learning and Assessment Utilizing Eye-Tracking</div>
+                            <ul class="section-body-text" style="list-style-type: disc;">
                                 <li class="sectionSubDescription">Conducted original research on user preferences and cognitive load in ontology visualizations using eye-tracking analysis</li>
                                 <li class="sectionSubDescription">Performed in-person testing sessions with 30+ participants, utilizing advanced eye-tracking technology with custom software developed with Javascript, Python and the REACT Javascript framework </li>
                                 <li class="sectionSubDescription">Published as: Determining the Effectiveness of Ontological Visualizations on Learning and Assessment Utilizing Eye-Tracking (Master’s thesis, California State University, Long Beach). CSULB ScholarWorks</li>
@@ -156,8 +159,8 @@
                         </div>
                         <!--Work text block-->
                         <div>
-                            <div class="work_text-point-title section-body-text2">Stub</div>
-                            <ul class="section-body-text2" style="list-style-type: disc;">
+                            <div class="work_text-point-title section-body-text">Stub</div>
+                            <ul class="section-body-text" style="list-style-type: disc;">
                                 <li class="sectionSubDescription">Developed in a small team utilizing the REACT Javascript web framework, CSS, HTML, MongoDB and GitActed as a multiplatform web tool for easily identifying and classifying media available on various available streaming services.</li>
                                 <li class="sectionSubDescription">Includes accurate streaming service listings, relevant links, adaptive GUI and personalized user accounts.</li>
                                 <li class="sectionSubDescription">Service has been discontinued</li>
@@ -165,8 +168,8 @@
                         </div>
                         <!--Work text block-->
                         <div>
-                            <div class="work_text-point-title section-body-text2">True World Foods Vehicle Database</div>
-                            <ul class="section-body-text2" style="list-style-type: disc;">
+                            <div class="work_text-point-title section-body-text">True World Foods Vehicle Database</div>
+                            <ul class="section-body-text" style="list-style-type: disc;">
                                 <li class="work_text-point">Developed in a small team utilizing the REACT Javascript web framework, CSS, HTML, Google Firebase and Git</li>
                                 <li class="work_text-point">Commissioned for True World Foods as a multiplatform web-based database for storing, updating and clearly displaying information about company vehicles. Includes permission-based services, adaptive GUI and account security</li>
                                 <li class="work_text-point">Contact with the company is no longer active, and the current status of the project is unknown</li>

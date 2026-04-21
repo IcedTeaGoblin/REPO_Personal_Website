@@ -5,7 +5,7 @@
 
     --top-bar_color:white;                  /*The bar located at the top of the page*/
 
-    --navbar-background_color:#92d1a3;      /*The navigation bar background*/
+    --navbar-background_color:#6f9e7b;      /*The navigation bar background*/
     --navbar-title_color:white;           /*The navigation bar title*/
     --navbar-body_color:white;            /*The navibation bar body text*/
 
@@ -17,7 +17,7 @@
 
     --section_color2:#92d1a3;               /*The foreground color of the 2nd and 4th sections*/
     --section-title_color2:white;         /*The title color of the 2nd and 4th sections*/
-    --section-body_color2:#1D3557;          /*The main body text color of the 2nd and 4th sections*/
+    --section-body_color2:#699675;          /*The main body text color of the 2nd and 4th sections*/
 
     --contact-text-color:#92d1a3;           /*The text links for the contact section*/
     /*--------------------------------------------------------------------------------------------------*/
@@ -103,6 +103,7 @@ a {
 
 .section_interior { 
     background-color:var(--section_color1);
+    flex:1 0 auto;
 }
 
 .section_interior2 { 
@@ -248,16 +249,13 @@ a {
 @media (max-width:1600px)
 {
     .navbar_body {
-        flex:0 0 auto;
         flex-direction:row;
+        box-sizing:border-box;
 
-        height:10vh;
+        height:150px;
         min-height:100px;
         width:100vw;
         min-width:680px;
-
-        padding:5%;
-
         position:fixed;
     }
 
@@ -269,7 +267,7 @@ a {
         display:block;
 
         position:fixed;
-        margin-top:calc(10vh - 10px);
+        margin-top:150px;
         width:100vw;
         min-width:680px;
     }
@@ -430,13 +428,12 @@ a {
 
 .about-me_text-block {
     flex: 1 0 auto;
-    font-size:0.9em;
+    font-size:1em;
 }
 
 .about-me_img {
     width:40%;
     aspect-ratio:1/1;
-    overflow:hidden;
 }
 /*----------------------------------------*/
 
