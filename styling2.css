@@ -30,6 +30,22 @@
     /*--------------------------------------------------------------------------------------------------*/
 }
 
+@media (max-width:1600px)
+{
+    #aboutme {
+        scroll-margin-top:275px;
+    }
+    #education {
+        scroll-margin-top:275px;
+    }
+    #career {
+        scroll-margin-top:275px;
+    }
+    #education {
+        scroll-margin-top:275px;
+    }
+}
+
 html {
   scroll-behavior: smooth;                    /*Makes the navigation between sections a smooth scroll*/     
 }
@@ -156,6 +172,13 @@ a {
     width:100%;
     min-height:100px;
     background-color:var(--top-bar_color);
+
+    color:var(--contact-text-color);
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:1.5em;
+    text-align:center;
+
+    padding: 0px 10% 0px 10%;
 }
 
 @media (max-width:1600px)
@@ -520,6 +543,7 @@ a {
 
 .career_text-point-title {
     font-size:1.5em;
+    font-weight:bold;
 }
 
 .career-text_point {
@@ -551,6 +575,13 @@ a {
 .work_img {
     width:30%;
     max-height:100%;
+
+    align-items:center;
+    justify-content:center;
+
+    
+    aspect-ratio:1/1;
+    overflow:hidden;
 }
 
 .work_text-block-img {
@@ -561,10 +592,11 @@ a {
 
 .work_text-point-title {
     font-size:1.7em;
+    font-weight:bold;
 }
 
 .work_text-point {
-
+    font-size:1em;
 }
 /*----------------------------------------*/
 
@@ -587,6 +619,7 @@ a {
     color:var(--contact-text-color);
     font-family:Arial, Helvetica, sans-serif;
     font-size:1.5em;
+    font-weight:bold;
 
     transition: transform 250ms ease;
     transform: scale(1.0);
